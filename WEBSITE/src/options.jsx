@@ -36,7 +36,6 @@ function Options() {
       }
     });
 
-    // Cleanup hover event listeners
     return () => {
       navRefs.current.forEach((item) => {
         if (item) {
@@ -56,18 +55,47 @@ function Options() {
         <div className="text-2xl font-bold text-sky-700">
           <img src="/retro.png" alt="Logo" className="w-24" />
         </div>
-        <div className="flex space-x-6">
-          {['Home', 'Facts', 'MultiMedia', 'Latest', 'ContactUs'].map((text, index) => (
-            <a
-              key={index}
-              ref={(el) => (navRefs.current[index] = el)}
-              href="#"
-              className="nav-item text-2xl font-extrabold text-purple-300"
-            >
-              {text}
-            </a>
-          ))}
-        </div>
+        <a
+        to="/home"
+        className="nav-item text-2xl font-extrabold text-purple-300 hover:text-purple-500 focus:text-purple-500"
+        aria-label="Navigate to Home"
+      >
+        Home
+      </a>
+      <a
+        to="/facts"
+        className="nav-item text-2xl font-extrabold text-purple-300 hover:text-purple-500 focus:text-purple-500"
+        aria-label="Navigate to Facts"
+      >
+        Facts
+      </a>
+
+      {/* Multimedia */}
+      <a
+        to="/multimedia"
+        className="nav-item text-2xl font-extrabold text-purple-300 hover:text-purple-500 focus:text-purple-500"
+        aria-label="Navigate to Multimedia"
+      >
+        Multimedia
+      </a>
+
+      {/* Latest */}
+      <a
+        to="/latest"
+        className="nav-item text-2xl font-extrabold text-purple-300 hover:text-purple-500 focus:text-purple-500"
+        aria-label="Navigate to Latest"
+      >
+        Latest
+      </a>
+
+      {/* Contact Us */}
+      <a
+        to="/contactus"
+        className="nav-item text-2xl font-extrabold text-purple-300 hover:text-purple-500 focus:text-purple-500"
+        aria-label="Navigate to Contact Us"
+      >
+        Contact Us
+      </a>
       </div>
     </div>
   );
