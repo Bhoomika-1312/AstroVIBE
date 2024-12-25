@@ -53,18 +53,18 @@ function Options() {
         className="top-0 left-0 w-full h-16 flex items-center justify-between px-4 z-50 bg-opacity-70 backdrop-blur"
       >
         <div className="text-2xl font-bold text-sky-700">
-          <img src="/retro.png" alt="Logo" className="w-24" />
+          <img src="logo.jpg" alt="Logo" className="w-24 rounded-xl h-16" />
         </div>
         <a
         to="/home"
-        className="nav-item text-2xl font-extrabold text-purple-300 hover:text-purple-500 focus:text-purple-500"
+        className="nav-item text-2xl font-extrabold text-white hover:text-purple-500 focus:text-purple-500"
         aria-label="Navigate to Home"
       >
         Home
       </a>
       <a
         to="/facts"
-        className="nav-item text-2xl font-extrabold text-purple-300 hover:text-purple-500 focus:text-purple-500"
+        className="nav-item text-2xl font-extrabold text-white hover:text-purple-500 focus:text-purple-500"
         aria-label="Navigate to Facts"
       >
         Facts
@@ -73,7 +73,7 @@ function Options() {
       {/* Multimedia */}
       <a
         to="/multimedia"
-        className="nav-item text-2xl font-extrabold text-purple-300 hover:text-purple-500 focus:text-purple-500"
+        className="nav-item text-2xl font-extrabold text-white hover:text-purple-500 focus:text-purple-500"
         aria-label="Navigate to Multimedia"
       >
         Multimedia
@@ -82,7 +82,7 @@ function Options() {
       {/* Latest */}
       <a
         to="/latest"
-        className="nav-item text-2xl font-extrabold text-purple-300 hover:text-purple-500 focus:text-purple-500"
+        className="nav-item text-2xl font-extrabold text-white hover:text-purple-500 focus:text-purple-500"
         aria-label="Navigate to Latest"
       >
         Latest
@@ -91,7 +91,7 @@ function Options() {
       {/* Contact Us */}
       <a
         to="/contactus"
-        className="nav-item text-2xl font-extrabold text-purple-300 hover:text-purple-500 focus:text-purple-500"
+        className="nav-item text-2xl font-extrabold text-white hover:text-purple-500 focus:text-purple-500"
         aria-label="Navigate to Contact Us"
       >
         Contact Us
