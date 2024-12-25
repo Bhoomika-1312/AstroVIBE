@@ -65,5 +65,4 @@ function Td7() {
     </div>
   );
 }
-
 export default Td7;
